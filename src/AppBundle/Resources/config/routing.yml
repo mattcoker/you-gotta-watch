@@ -1,0 +1,7 @@
+homepage:
+    path:     /
+    defaults: { _controller: AppBundle:Default:addRecommendation }
+
+test:
+    path:     /test
+    defaults: { _controller: AppBundle:Default:dashboard }

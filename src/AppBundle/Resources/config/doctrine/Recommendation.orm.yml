@@ -1,0 +1,24 @@
+AppBundle\Entity\Recommendation:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\RecommendationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        submitterName:
+            type: string
+            length: 255
+        submitterEmail:
+            type: string
+            length: 255
+        content:
+            type: integer
+        isApproved:
+            type: boolean
+        isPending:
+            type: boolean
+    lifecycleCallbacks: {  }
